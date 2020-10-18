@@ -177,6 +177,7 @@ public class BinarySearchTree {
     
  bstTree.BstToLinked(bstTree.root);
  bstTree.listeyiYazdir(bstTree.head);
+        System.out.println("Çalışıyor mu");
  
  
     }
