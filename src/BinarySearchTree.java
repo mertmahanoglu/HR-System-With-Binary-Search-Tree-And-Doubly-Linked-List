@@ -67,7 +67,46 @@ public class BinarySearchTree {
         BstToLinked(root.sol); 
     } 
     
+
+    //ADDED BY BORAN 
     
+    void DugumuSil 
+    (int konum ) { 
+
+// sistemdeki bilgilerini kaldırma 
+
+// liste null mu ? 
+if (head == null)
+{
+  return;
+}
+
+// store head node 
+Node gecicidugum = head;
+
+// kaldırılacak header
+if (konum == 0) {
+
+head = gecicidugum.sag;  //Change head
+return; }
+
+// Silinen dugumun yerine gececek oncekı dugumu bul
+
+for ( int i = 0 ; temp! = null && i< konum -1, i++)
+gecicidugum = gecicidugum.sag;
+
+// konum dugum sayisindan fazla ise
+if (gecicidugum == null) || gecicidugum.next == null) 
+return;
+
+// Gecici dugum -> sonraki silinecek dugum
+// silinecek sonraki dugumde sakla 
+Node sag = gecicidugum.sag.sag;
+gecicidugum.sag = sag; // Bagi listeden kes 
+    }
+    
+    //END POINT
+
       void listeyiYazdir(Node head) 
     { 
         System.out.println("Extracted Double Linked List is : "); 
